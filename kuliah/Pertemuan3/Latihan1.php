@@ -1,6 +1,12 @@
-<?php
-    $topi = "Topi";
-    $bundar = "Bundar";
+<?php 
+    echo "Mulai <br>";
+        $nilai_awal = 10;
+    while ($nilai_awal >= 1) {
+        echo "Hello World $nilai_awal x! <br>";
+        $nilai_awal -= 1;
+    }
+    echo "Selesai"
+
 ?>
 
 <!DOCTYPE html>
@@ -9,13 +15,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 1a</title>
+    <title>Document</title>
 </head>
 <body>
-    <h2>
-        <i>
-            "<?php echo $topi ?> saya <?php echo $bundar ?>, <?php echo $bundar ?> <?php echo $topi ?> saya."
-        </i>
-    </h2>
+    <p>
+
+    </p>
 </body>
 </html>
