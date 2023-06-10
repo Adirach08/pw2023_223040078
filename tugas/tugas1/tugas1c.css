@@ -1,0 +1,59 @@
+.box1 {
+	line-height: 50px;
+	display: flex;
+	text-align: center;
+}
+
+.box2 {
+	line-height: 50px;
+	display: flex;
+	text-align: center;
+}
+
+.box3 {
+	line-height: 50px;
+	display: flex;
+	text-align: center;
+}
+
+.box1-1 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
+
+.box2-1 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
+
+.box2-2 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
+
+.box3-1 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
+
+.box3-2 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
+
+.box3-3 {
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: 1px solid black;
+}
