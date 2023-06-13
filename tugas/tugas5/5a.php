@@ -96,5 +96,6 @@ $mahasiswa = [
             <li>Jurusan : <?= $mhs['jurusan']; ?></li>
         </ul>
         <?php }?>
+
 </body>
 </html>

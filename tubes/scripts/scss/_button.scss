@@ -1,0 +1,15 @@
+.btn {
+	&.btn-primary {
+		background-color: #003067;
+		border-color: #003067;
+		color: #ffffff;
+		&:hover,
+		&:focus {
+			background-color: #01254e;
+		}
+	}
+
+	&.btn-rounded--pill {
+		border-radius: 50px;
+	}
+}
