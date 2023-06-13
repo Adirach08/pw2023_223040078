@@ -1,23 +1,8 @@
 <?php 
+    include 'connect.php';
 
-    include "connect.php";
-
-    if (isset($_GET['detail'])) {
-        $category_id = $_GET['detail'];
-
-        $queryShow = "SELECT * FROM categories WHERE id = '$category_id';";
-        $sqlShow = mysqli_query($conn, $queryShow);
-
-        $resultShow = mysqli_fetch_assoc($sqlShow);
-
-        $category_name = $resultShow['category_name'];
-        $category_image = $resultShow['category_image'];
-    }
-
-    function rupiah($angka){
-        $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
-        return $hasil_rupiah;
-    }
+    $categories = "SELECT * FROM categories;";
+    $category = mysqli_query($conn, $categories);
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +18,7 @@
 		<meta
 			data-rh="true"
 			name="title"
-			content="Categories - AdiRap Store | Fashion Style"
+			content="Categories All - AdiRap Store | Fashion Style"
 		/>
 		<meta
 			data-rh="true"
@@ -63,14 +48,12 @@
 		<meta
 			data-rh="true"
 			property="og:title"
-			content="<?php echo "$category_name"; ?> Categories - AdiRap Store | Fashion Style"
+			content="Categories All - AdiRap Store | Fashion Style"
 		/>
 		<meta data-rh="true" property="og:type" content="website" />
 		<meta data-rh="true" property="og:url" content="https://adirap.com" />
 
-		<title>
-            <?php echo "$category_name"; ?> Categories - AdiRap Store | Fashion Style
-        </title>
+		<title>Categories All - AdiRap Store | Fashion Style</title>
 
 		<link
 			rel="shortcut icon"
@@ -144,33 +127,39 @@
 					<!-- categories title -->
 					<div class="row">
 						<div class="col-12" data-aos="fade-up">
-							<h5>Kategori : <span class="text-danger"><?php echo "$category_name"; ?></span></h5>
+							<h5>Kategori Unggulan</h5>
 						</div>
 					</div>
 					<!-- categories title -->
 
 					<!-- categories items -->
 					<div class="row">
+                        <?php 
+                            while ($category_item = mysqli_fetch_assoc($category)) {
+                        ?>
+                        
 						<!-- category -->
 						<div
 							class="col-6 col-md-3 col-lg-2"
 							data-aos="fade-up"
 							data-aos-delay="100"
 						>
-							<div class="component-categories d-block">
+							<a class="component-categories d-block" href="categories.php?detail=<?php echo $category_item['id'] ?>">
 								<div class="categories-image">
 									<img
-										src="./assets/images/categories/<?php echo "$category_image"; ?>"
+										src="./assets/images/categories/<?php echo $category_item['category_image'] ?>"
 										alt="icon shirt - adirap fashion store - shirt categories"
 										class="w-100"
 									/>
 								</div>
 								<p class="categories-text">
-                                    <?php echo "$category_name"; ?>
+                                    <?php echo $category_item['category_name'] ?>
                                 </p>
-							</div>
+							</a>
 						</div>
 						<!-- category -->
+
+                        <?php } ?>
 					</div>
 					<!-- categories items -->
 				</div>

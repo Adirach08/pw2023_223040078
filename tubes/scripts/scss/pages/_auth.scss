@@ -1,4 +1,6 @@
 .page-auth {
+	margin-top: 130px !important;
+
 	.row-login {
 		min-height: 70vh;
 	}
@@ -19,5 +21,11 @@
 			@include button-variant(#f3f3f3, transparent);
 			color: #bbbbbb;
 		}
+	}
+}
+
+.pgae-content {
+	&.page-auth {
+		margin-top: 130px !important;
 	}
 }

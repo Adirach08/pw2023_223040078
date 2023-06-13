@@ -1,7 +1,7 @@
 <?php
     $host = 'localhost';
     $user = 'root';
-    $pass = 'root';
+    $pass = '';
     $db = 'pw2023_223040078';
 
     $conn = mysqli_connect($host, $user, $pass, $db);

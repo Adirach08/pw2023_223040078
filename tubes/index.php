@@ -109,7 +109,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="./categories.php">Categories</a>
+							<a class="nav-link" href="./categories-all.php">Categories</a>
 						</li>
 
 						<li class="nav-item">

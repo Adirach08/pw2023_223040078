@@ -85,7 +85,7 @@
 							<a class="nav-link" href="./">Home </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./categories.php">Categories</a>
+							<a class="nav-link" href="./categories-all.php">Categories</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Rewards</a>
@@ -96,7 +96,7 @@
 		</nav>
 
 		<!-- Page Content -->
-		<div class="page-content page-auth mt-5" id="register">
+		<div class="page-content page-auth" id="register">
 			<div class="section-store-auth" data-aos="fade-up">
 				<div class="container">
 					<div class="row justify-content-center">
@@ -136,9 +136,9 @@
 									Daftar Sekarang
 								</button>
 
-								<button type="submit" class="btn btn-signup btn-block mt-2">
+								<a href="index.php" class="btn btn-signup btn-block mt-2">
 									Kembali
-								</button>
+								</a>
 							</form>
 						</div>
 					</div>

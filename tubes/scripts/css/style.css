@@ -10521,6 +10521,9 @@ footer p {
           box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
+.page-auth {
+  margin-top: 130px !important;
+}
 .page-auth .row-login {
   min-height: 70vh;
 }
@@ -10565,6 +10568,10 @@ footer p {
 .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled):active:focus, .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled).active:focus, .show > .page-auth .section-store-auth .btn-signup.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.pgae-content.page-auth {
+  margin-top: 130px !important;
 }
 
 .page-success .row-login {
